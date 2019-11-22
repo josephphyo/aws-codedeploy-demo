@@ -1,0 +1,32 @@
+#CloudWatch Event Pattern for ALL failed CodePipeline executions
+{
+  "source": [
+    "aws.codepipeline"
+  ],
+  "detail-type": [
+    "CodePipeline Pipeline Execution State Change"
+  ],
+  "detail": {
+    "state": [
+      "FAILED"
+    ]
+  }
+}
+
+#CloudWatch Event Pattern for 1 or more specific pipelines that failed their executions
+{
+  "source": [
+    "aws.codepipeline"
+  ],
+  "detail-type": [
+    "CodePipeline Pipeline Execution State Change"
+  ],
+  "resources": [
+    "arn:aws:codepipeline:us-east-1:845677511246:test-pipeline"
+  ],
+  "detail": {
+    "state": [
+      "FAILED"
+    ]
+  }
+}
