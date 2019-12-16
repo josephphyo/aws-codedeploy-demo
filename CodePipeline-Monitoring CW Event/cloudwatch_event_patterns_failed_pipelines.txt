@@ -22,7 +22,7 @@
     "CodePipeline Pipeline Execution State Change"
   ],
   "resources": [
-    "arn:aws:codepipeline:us-east-1:845677511246:test-pipeline"
+    "arn:aws:codepipeline:us-east-1:841234567898:test-pipeline"
   ],
   "detail": {
     "state": [
