@@ -1,2 +1,2 @@
-# codedeploy-sample
+# aws-codedeploy-demo
 ## Hopper Again!
